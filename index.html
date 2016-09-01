@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <style>
+            #muhcanvas {
+                border: 2px solid black;
+            }
+        </style>
+        <script src='./core.js'></script>
+    </head>
+    <body>
+        <center>
+            <div style='width: 50%'>
+                <h2><i>Tetris (November 2015)</i></h2>
+                <canvas width='600px' height='700px' id='muhcanvas'>
+                your browser doesn't support the canvas!
+                </canvas>
+                <h3><i>By Christopher Sfalanga</i></h3>
+                <p align='center' >&nbsp;&nbsp;&nbsp;&nbsp;I wrote this in a couple months using javascript and canvas. The rotation for
+                line blocks is the transpose of a 4x4, and all other blocks are rotated by the column-swapped transpose of a 3x3.
+                Being a complete newbie with Tetris, I wrote the game to the original Tetris' standards so no fancy ARS/SRS-ghostblock business.
+                Directional keys for strafing, rotation, and soft drop. Spacebar for hard drop.</p>
+            </div>
+            <script>
+                loadGame(document.getElementById('muhcanvas'));
+            </script>
+    </body>
+</html>
